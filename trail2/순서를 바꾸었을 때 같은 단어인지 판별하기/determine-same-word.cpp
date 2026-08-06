@@ -18,11 +18,13 @@ int main() {
         }
     }
 
-    bool ans = true;
     for (int i = 0; i < 10+26+26; ++i) {
-        if (arr[i] != 0) {ans = false;}
+        if (arr[i] != 0) {
+            cout << "No";
+            return 0;
+        }
     }
-    cout << (ans ? "Yes" : "No");
+    cout << "Yes";
 
     return 0;
 }
